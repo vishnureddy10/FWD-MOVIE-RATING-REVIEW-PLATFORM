@@ -1,0 +1,117 @@
+
+body {
+  background-color: #0c0d0d;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav_container {
+  background-color: #141514;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav_container h1 {
+  margin: 0;
+  color: #00d100;
+}
+
+#searchInput {
+  background-color: #131720;
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+  width: 250px;
+}
+
+button {
+  background-color: #07e704;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #078807;
+}
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 📽️ Movie / News card */
+.movie {
+  background-color: #1a1c1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie:hover {
+  transform: scale(1.03);
+}
+
+.movie img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* 📝 Review section */
+.reviews {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.review {
+  background: #222;
+  padding: 5px 8px;
+  margin: 3px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ffde59;
+}
+
+#movies h2 {
+  grid-column: 1 / -1;
+  margin-top: 30px;
+  color: #00d100;
+  border-bottom: 2px solid #00d100;
+  padding-bottom: 5px;
+}
+  margin: 8px 0;
+}
+
+.star {
+  font-size: 22px;
+  cursor: pointer;
+  color: #aaa;
+  transition: transform 0.2s, color 0.2s;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.star:hover {
+  transform: scale(1.2);
+  color: #FFD700;
+}
